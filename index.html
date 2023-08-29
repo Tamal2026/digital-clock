@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <script src="https://kit.fontawesome.com/5d3b19e49f.js" crossorigin="anonymous"></script>
+   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="bg-slate-400 w-2/12 rounded-lg">
+       
+        <section class="flex gap-2 items-center justify-center">
+            <div>
+                <p class="text-xs text-white">Hours</p>
+            </div>
+           
+            <div>
+                <p class="text-xs text-white">Minutes</p>
+            </div>
+         
+            <div>
+                <p class="text-xs text-white">Seconds</p>
+            </div>
+        </section>
+        
+        <section class="flex gap-2 items-center justify-center">
+            <div>
+                <p id="hours" class="text-3xl text-sky-600">00</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+                <p id="minutes" class="text-3xl text-orange-600">00</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+                <p id="seconds" class="text-3xl text-lime-500">00</p>
+            </div>
+        </section>
+        <section class="flex gap-3 pb-8 px-5"> 
+            <button id="start" class="btn btn-outline btn-accent font-semibold w-12">Start</button>
+            <button id="stop" class="btn bg-emerald-500 text-white border-none text-xs w-16">Stop</button>
+            <button id="reset" class="btn btn-warning">Reset</button>
+        </section>
+    </main>
+
+  <script src="./timeout.js"></script>
+</body>
+</html>
